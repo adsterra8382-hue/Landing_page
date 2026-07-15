@@ -22,62 +22,80 @@ min-height:100vh;
 padding:20px;
 }
 
-.container{
+.card{
 background:#fff;
 max-width:380px;
 width:100%;
 border-radius:25px;
-padding:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.2);
-text-align:center;
+overflow:hidden;
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+animation:fade .8s;
 }
 
 img{
 width:100%;
-border-radius:18px;
+display:block;
+}
+
+.content{
+padding:20px;
+text-align:center;
 }
 
 h2{
-margin:20px 0 10px;
 font-size:30px;
-color:#111;
+margin-bottom:10px;
 }
 
 p{
-font-size:18px;
 color:#666;
+font-size:18px;
 margin-bottom:25px;
 }
 
 .btn{
 display:block;
-background:#ff1f5a;
+background:#ff1f63;
 color:#fff;
 text-decoration:none;
 padding:18px;
+border-radius:15px;
 font-size:28px;
 font-weight:bold;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(255,0,90,.4);
+transition:.3s;
+animation:pulse 1.2s infinite;
 }
 
 .btn:hover{
-background:#e6004c;
+transform:scale(1.05);
 }
 
-.note{
+.fast{
 margin-top:20px;
-color:#777;
-font-size:16px;
+color:#888;
+font-size:18px;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
 }
 </style>
 
 </head>
 <body>
 
-<div class="container">
+<div class="card">
 
 <img src="IMG-20260715-WA0004.jpg" alt="Girl">
+
+<div class="content">
 
 <h2>🔥 Pura Video Dekhne Ke Liye</h2>
 
@@ -87,8 +105,10 @@ font-size:16px;
 CONTINUE
 </a>
 
-<div class="note">
+<div class="fast">
 ⚡ Fast Access
+</div>
+
 </div>
 
 </div>
