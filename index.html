@@ -3,88 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Watch Full Video</title>
+<title>Exclusive Content – Tap to Enter</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#ff4b7d,#ff8fab);
+background:#000;
 display:flex;
 justify-content:center;
 align-items:center;
-min-height:100vh;
-padding:20px;
+height:100vh;
+overflow:hidden;
+color:#fff;
 }
 
 .card{
-background:#fff;
-max-width:380px;
-width:100%;
-border-radius:25px;
-overflow:hidden;
-box-shadow:0 20px 50px rgba(0,0,0,.25);
-animation:fade .8s;
+width:90%;
+max-width:420px;
+background:#111;
+border:1px solid #FFD700;
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 30px rgba(255,215,0,.25);
+animation:fade .8s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 img{
 width:100%;
-display:block;
+border-radius:15px;
+margin-bottom:20px;
 }
 
-.content{
-padding:20px;
-text-align:center;
-}
-
-h2{
-font-size:30px;
+h1{
+font-size:28px;
 margin-bottom:10px;
 }
 
 p{
-color:#666;
-font-size:18px;
+color:#bbb;
 margin-bottom:25px;
+line-height:1.6;
 }
 
-.btn{
-display:block;
-background:#ff1f63;
-color:#fff;
-text-decoration:none;
+button{
+width:100%;
 padding:18px;
-border-radius:15px;
-font-size:28px;
+font-size:20px;
+border:none;
+border-radius:12px;
+background:#FFD700;
 font-weight:bold;
-transition:.3s;
-animation:pulse 1.2s infinite;
+cursor:pointer;
+transition:.25s;
 }
 
-.btn:hover{
-transform:scale(1.05);
+button:hover{
+transform:scale(1.03);
 }
 
-.fast{
-margin-top:20px;
-color:#888;
-font-size:18px;
-}
-
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.05);}
-100%{transform:scale(1);}
-}
-
-@keyframes fade{
-from{opacity:0;transform:translateY(30px);}
-to{opacity:1;transform:translateY(0);}
+.footer{
+margin-top:18px;
+font-size:13px;
+color:#777;
 }
 </style>
 
@@ -93,21 +91,39 @@ to{opacity:1;transform:translateY(0);}
 
 <div class="card">
 
-<img src="IMG-20260715-WA0004.jpg" alt="Girl">
+<img src="YOUR_IMAGE_URL_HERE" alt="Preview">
 
-<div class="content">
+<h1>Exclusive Content</h1>
 
-<h2>🔥 Pura Video Dekhne Ke Liye</h2>
+<p>
+Tap below to continue.
+Fast • Secure • Mobile Optimized
+</p>
 
-<p>Neeche Continue par tap karke aage badho</p>
+<button onclick="go()">
+🔓 Continue
+</button>
 
-<a class="btn" href="https://www.effectivecpmnetwork.com/vcn85kpbhd?key=2462ce4686d716abab5d66d57d36bf96">
-CONTINUE
-</a>
-
-<div class="fast">
-⚡ Fast Access
+<div class="footer">
+Loading takes only a second.
 </div>
+
+</div>
+
+<script>
+
+function go(){
+
+const link="PASTE_YOUR_SMARTLINK_HERE";
+
+window.location.href=link;
+
+}
+
+</script>
+
+</body>
+</html></div>
 
 </div>
 
